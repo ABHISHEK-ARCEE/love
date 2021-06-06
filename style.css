@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis?family=Serif);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: linear-gradient(rgb(30, 30, 30), rgb(128, 0, 128));
+  --color-text-main: #ffffff;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Serif", Rubik;
+  --font-family-header: "Serif";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: "Serif", Rubik;
+  background: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #2800FF;
+  font-family: "Serif", Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+  border-radius: 20%;
+}
+
+/* Subheading */
+.name {
+  color: #ffffff;
+  font-family: sofia;
+  text-shadow: 3px 3px 3px #474747;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.button {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 50px;
+  width: 80%;
+  font-size: 2.5rem;
+  margin: 1% 0 1% 0;
+  padding: 8% 5% 8% 5%;
+  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: #222222;
+  margin: 0 -2% -2% -2%;
+  color: #ffffff;
+  padding: 10% 0 10% 0;
+}
